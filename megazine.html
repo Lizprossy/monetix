@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        fetch('https://monetix-lending.ghost.io')
+        .then(response => response.json())
+        .then(result => {
+          let post = result['posts'][0]
+          document.getElementById('blog-post').innerHTML = `<a href="${post.url}" target="_blank">${post.title}</a>`
+        })
+    </script>  
+
+
+
+
+
+
+
+
+</body>
+</html>
