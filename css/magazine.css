@@ -1,9 +1,15 @@
 #blog-posts{
-    margin-left:150PX;
+    margin-left:100PX;
     display: grid;
-  border-radius: 5px;
     grid-gap: 15px;
-    grid-template-columns: repeat(auto-fit, 400px);
+    grid-template-columns: repeat(auto-fit, 280px);
+  }
+
+  #blog-posts h5 {
+    font-weight: bold;
+  }
+  #blog-posts img{
+    border-radius: 15px;
   }
   @media only screen and (max-width: 620px) {
     /* For mobile phones: */
