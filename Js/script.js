@@ -7,7 +7,7 @@ const api = new GhostContentAPI({
   });
 
   api.posts
-    .browse({limit: 20, include: 'tags'})
+    .browse({limit: 22, include: 'tags'})
     .then((posts) => {
         //code that inserts the blog posts to the page 
     })
@@ -16,7 +16,7 @@ const api = new GhostContentAPI({
     });
 
     api.posts
-    .browse({limit: 20, include: 'tags'})
+    .browse({limit: 22, include: 'tags'})
     .then((posts) => {
        var temp = document.getElementsByTagName("template")[0]; // reference of template tag in DOM;
        posts.forEach((post) => {
